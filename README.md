@@ -29,7 +29,7 @@ Ubidots (switch "alarma") ──▶ gateway ──▶ aeris/<id>/cmd ──▶ A
 | `gateway/RASPBERRY_SETUP.md` | Guía paso a paso de la Raspberry Pi |
 | `docs/` | Imágenes de la wiki, actas de reunión y material complementario |
 
-Para compilar el firmware: abrir `firmware/MonitorHidrico_LOCAL/` en Arduino IDE 2.x con el core *Arduino UNO R4 Boards* y las librerías Adafruit BME280, Adafruit Unified Sensor, LiquidCrystal_I2C y ArduinoMqttClient.
+Para compilar el firmware: abrir `firmware/MonitorHidrico_LOCAL/` en Arduino IDE 2.x con el core *Arduino UNO R4 Boards* y las librerías Adafruit BME280, Adafruit Unified Sensor y LiquidCrystal_I2C, más la librería MQTT indicada en el encabezado del `.ino`.
 
 Para poner en marcha el gateway: seguir `gateway/RASPBERRY_SETUP.md`. Las claves y tokens van solo en `gateway/.env`, que no se versiona.
 
