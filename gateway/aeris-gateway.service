@@ -1,0 +1,14 @@
+[Unit]
+Description=AERIS Gateway IoT
+After=network-online.target mosquitto.service
+Wants=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/aeris-gateway
+ExecStart=/home/pi/aeris-gateway/venv/bin/python gateway.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

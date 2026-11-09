@@ -218,3 +218,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AERIS: secretos, base de datos y logs del gateway
+.env
+*.db
+*.db-journal
+*.log
+
+# Tablero React (si se incluye)
+node_modules/
+dist/
+
+# Sistema y editor
+.DS_Store
+Thumbs.db
+.vscode/
