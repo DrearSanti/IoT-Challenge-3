@@ -60,7 +60,7 @@ UBIDOTS_TLS = os.getenv("UBIDOTS_TLS", "1") == "1"
 UBIDOTS_PORT = _env_int("UBIDOTS_PORT", 8883 if UBIDOTS_TLS else 1883)
 # Plan Ubidots STEM (verificar en la cuenta): 10 variables por dispositivo,
 # ~4000 dots/dia y ~30 dots/min. Con 8 variables cada 300 s -> 2304 dots/dia en
-# "aeris" + 4 variables de IA cada 300 s -> 1152 en "aeris-ia" = ~3500/dia.
+# "aeris" + 5 variables de IA cada 300 s -> 1440 en "aeris-ia" = ~3750/dia.
 UBIDOTS_INTERVALO_S = _env_int("UBIDOTS_INTERVALO_S", 300)
 UBIDOTS_DEVICE_IA = os.getenv("UBIDOTS_DEVICE_IA", "aeris-ia")
 # Variables que se suben (para no pasar el limite del plan). Separadas por coma.
